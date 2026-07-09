@@ -871,16 +871,16 @@ const COMPS=[
 ];
 
 const REVIEWS=[
+  {name:'Tony Lane',src:'Google',g2:null,google:5,date:'2026-07-07',text:'',co:''},
+  {name:'Craig Caffarello',src:'G2',g2:10,google:null,date:'2026-07-05',text:'Easy to Use, Open API, and Rapid Improvements with Rentvine',co:''},
   {name:'DWC Property',src:'Google',g2:null,google:5,date:'2026-06-29',text:'Has been a godsend for our property management company.',co:''},
   {name:'Sal B',src:'G2',g2:10,google:null,date:'2026-06-27',text:'Open API and Custom Dashboards That Make Reporting Shine',co:''},
-  {name:'Amy B',src:'Google',g2:null,google:5,date:'2026-06-26',text:'We have utilized Rentvine for coming up to 5 years now and absolutely love it. It\'s an all in one property management software that saves us time and resources on a daily basis.',co:''},
+  {name:'Amy B',src:'Google',g2:null,google:5,date:'2026-06-26',text:'We have utilized Rentvine for coming up to 5 years now and absolutely love it - it is very intuitive, and makes my every day life easier. Their team are all passionate and it shows!',co:''},
   {name:'Cynthia L',src:'G2',g2:10,google:null,date:'2026-06-26',text:'Streamlined Property Management with Robust Features',co:''},
-  {name:'Jon Bradfield',src:'Google',g2:null,google:5,date:'2026-06-18',text:'Joemar was extremely proactive in helping our team get everything configured correctly and took the time to walk us through the training step by step. He was knowledgeable, responsive, and very easy to work with.',co:''},
-  {name:'Anonymous',src:'G2',g2:10,google:null,date:'2026-06-17',text:'Easy Setup with Excellent Support.',co:''},
 ];
 
-const ALL_G2=[9,9,9,9,10,10,10,10,10,10,10,10,10,10,10,7,10,10,8,10,10,10,8,10,10,10,10,8,10,9,10,10,10,10,10];
-const ALL_GOOGLE=[5,1,5,5,5,5,1,5,5,5,5,5,5,5,5,5,1,1,5,5,5];
+const ALL_G2=[10,10,10,10,10,9,10,10,8,10,10,10,10,10,10,10,8,8,10,10,10,7,10,10,10,10,9,10,10,10,10,10,10,9,9,9];
+const ALL_GOOGLE=[5,5,5,5,1,1,5,5,5,5,5,5,5,5,5,1,5,1,5,5,5,5];
 
 
 const SOCIAL_HISTORY = [
@@ -917,6 +917,7 @@ compScores.yardibreeze={g2:'8.0/10',google:null,capterra:'4.2/5',sa:'4.2/5'};
 // Weekly log entries
 if(!wlEntries.find(e=>e.date==='2026-06-25')){wlEntries.push({date:'2026-06-25',note:'Hub migrated to Cowork. Review data refreshed from Monday board — 33 G2 reviews tracked (avg 9.6/10), 19 Google reviews tracked (avg 4.2/5). Reviews tab updated with 6 most recent through June 18.'});}
 if(!wlEntries.find(e=>e.date==='2026-07-02')){wlEntries.push({date:'2026-07-02',note:'Full hub refresh — July 2, 2026. 4 new reviews (DWC Property, Sal B, Amy B, Cynthia L). Rentvine: 35 G2 board reviews (avg 9.6/10), 21 Google board reviews (avg 4.2/5). G2 platform: 73 reviews at 4.7/5. Social: IG 1,317 | LI 4,803 | FB 2,100. Competitor scores seeded: DoorLoop leads G2 at 9.6/10, AppFolio/Entrata 9.2/10, Buildium 9.0/10, Yardi Breeze 8.0/10. AppFolio LinkedIn updated to 60K+ (up from 37K).'});}
+if(!wlEntries.find(e=>e.date==='2026-07-09')){wlEntries.push({date:'2026-07-09',note:'Reviews tab reconnected to Monday board — full re-pull of all 59 tracked reviews (sorted by Review Date). 2 new reviews since last sync: Tony Lane (Google, 5★, Jul 7) and Craig Caffarello (G2, 10/10, Jul 5). Rentvine: 36 G2 board reviews (avg 9.6/10), 22 Google board reviews (avg 4.3/5), 1 Capterra (5★). Reviews tab now shows 6 most recent through July 7.'});}
 saveState();
 
 function fmt(n){if(n===null||n===undefined)return'—';return n>=1000?(n/1000).toFixed(1)+'K':n.toString();}
